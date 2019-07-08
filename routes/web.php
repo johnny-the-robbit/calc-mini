@@ -1,15 +1,11 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+Route::group(['prefix' => 'api', 'namespace' => 'API'], function () {
+    Route::get('calc/add/{a}/{b}', 'CalcController@addition');
+    Route::get('calc/subtract/{a}/{b}', 'CalcController@subtract');
+    Route::get('calc/multiply/{a}/{b}', 'CalcController@multiply');
+    Route::get('calc/division/{a}/{b}', 'CalcController@division');
+});
 
 Route::get('/', function () {
     return view('welcome');
