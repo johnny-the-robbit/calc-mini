@@ -1,7 +1,10 @@
 ## Calc mini
 Project use laravel 5.8 and vue.js
 
-**To install project run next commands:**
+#### Requirements
+php 7.2
+
+**To install the project, after cloning the repository, run the commands below:**
 
 php composer.phar install
 
